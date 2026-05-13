@@ -11,5 +11,13 @@ public class Main{
         p.mostrarPersona();
         Estudiante e = new Estudiante("Jobsito", 25, true);
         e.mostrarPersona();
+        
+        System.out.println();
+
+        Empleado empleado = new Empleado("Carlos Tevez", 50000);
+        empleado.mostarDetalles();
+
+        Gerente gt = new Gerente("Yeison", 155555, "Tecnologia");
+        gt.mostarDetalles();
     }
 }
