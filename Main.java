@@ -1,3 +1,5 @@
+import herencia_error.CocheP;
+
 public class Main{
     public static void main(String[] args) {
         Vehiculo vh = new Vehiculo("BMW", 80);
@@ -19,5 +21,11 @@ public class Main{
 
         Gerente gt = new Gerente("Yeison", 155555, "Tecnologia");
         gt.mostarDetalles();
+
+
+        //Pruba de errores
+        CocheP c = new CocheP("BMW");
+        c.mostrarMarca();
+        //marca has private access in VehiculoP
     }
 }
